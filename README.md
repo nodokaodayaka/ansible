@@ -3,6 +3,11 @@
 $ `sudo yum -y install epel-release`  
 $ `sudo yum -y install ansible`
 
+## ssh できるようなにする
+$ `ssh-keygen -t rsa`  
+$ `パスワードなしでエンター`  
+$ `ssh-copy-id vagrant@192.168.33.20`
+
 ## ansible コマンドで接続確認する
 $ `ansible all -i inventory/hosts -m ping`
 ```
