@@ -16,3 +16,8 @@ $ `ansible all -i inventory/hosts -m ping`
     "ping": "pong"
 }
 ```
+## httpd
+### インストール
+$ `ansible-playbook -i inventory/hosts httpd.yml`
+### 接続確認
+$ `curl http://192.168.33.20`
