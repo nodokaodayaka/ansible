@@ -5,5 +5,7 @@
   - name : Apache をインストール
     yum : name=httpd state=latest
 
+  - copy: src=conf/httpd.conf dest=/etc/httpd/conf/httpd.conf owner=apache group=apache mode=0644
+
   - name: Apache を起動する
     service: name=httpd state=started enabled=yes
