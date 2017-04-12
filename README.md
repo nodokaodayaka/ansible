@@ -18,6 +18,6 @@ $ `ansible all -i inventory/hosts -m ping`
 ```
 ## httpd
 ### インストール
-$ `ansible-playbook -i inventory/hosts httpd.yml`
+$ `ansible-playbook -i inventory/hosts httpd/apache.yml`
 ### 接続確認
 [ブラウザ接続確認](http://localhost:8080)
